@@ -12,5 +12,5 @@ export PATH="$PATH:`yarn global bin`"
 #
 ####################################################
 
-alias l="ls -la"
+alias l="ls -lah"
 alias p="cd ~/Projects"
