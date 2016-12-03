@@ -1,4 +1,5 @@
 # This is Git's per-user configuration file.
+# To see this options in the command line use "$ git config --list"
 
 [user]
 	name = Alex Alsheuski
@@ -6,3 +7,6 @@
 
 [core]
     excludesfile = "$HOME/.gitignore"
+
+[include]
+    path = "~/.gitconfig.local"

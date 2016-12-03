@@ -21,3 +21,5 @@ env RCRC=$HOME/.dotfiles/rcrc rcup
 ## Usage
 
 Run `rcup` to make symlinks from ~/.dotfiles directory to home directory.
+
+Run `lsrc` to show list of all your dotfiles in a system.
