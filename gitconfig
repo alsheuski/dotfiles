@@ -1,5 +1,8 @@
 # This is Git's per-user configuration file.
+
 [user]
-# Please adapt and uncomment the following lines:
-	name = Aleksey Alshevskiy
-	email = aleksey.alshevskiy@intellectsoft.net
+	name = Alex Alsheuski
+	email = alex@alsheuski.com
+
+[core]
+    excludesfile = "$HOME/.gitignore"
