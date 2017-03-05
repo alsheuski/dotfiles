@@ -22,3 +22,6 @@ alias p="cd ~/Projects"
 ####################################################
 
 source $HOME/.oh-my-git/prompt.sh
+
+# added by Anaconda2 4.2.0 installer
+export PATH="/Users/alsheuski/anaconda/bin:$PATH"

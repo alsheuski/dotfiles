@@ -86,3 +86,8 @@ cd ~/Projects
 
 # local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+source /usr/local/bin/virtualenvwrapper.sh
+
+export PATH="$HOME/anaconda/bin:$PATH"
+

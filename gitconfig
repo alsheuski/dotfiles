@@ -2,8 +2,8 @@
 # To see this options in the command line use "$ git config --list"
 
 [user]
-	name = Alex Alsheuski
-	email = alex@alsheuski.com
+	name = 
+	email = 
 
 [core]
 	excludesfile = /Users/alsheuski/.gitignore_global
@@ -16,3 +16,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[commit]
+	template = /Users/alsheuski/.stCommitMsg
