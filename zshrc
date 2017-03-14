@@ -89,5 +89,4 @@ cd ~/Projects
 
 source /usr/local/bin/virtualenvwrapper.sh
 
-export PATH="$HOME/anaconda/bin:$PATH"
-
+export PATH="$HOME/.local/bin:$PATH"
