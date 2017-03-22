@@ -3,3 +3,6 @@ alias p="cd ~/Projects"
 
 alias p2="python"
 alias p3="python3"
+
+alias gs="git status"
+alias gal="git add ."
