@@ -90,4 +90,4 @@ cd ~/Projects
 source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="$HOME/.local/bin:$PATH"
-
+#export PATH="/usr/local/bin/python:$PATH"

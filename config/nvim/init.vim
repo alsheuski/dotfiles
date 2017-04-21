@@ -6,17 +6,17 @@
 set number
 
 " Setup dein --------------------------------------------------------
-if (!isdirectory(expand("$HOME/.vim/repos/github.com/Shougo/dein.vim")))
-	call system(expand("mkdir -p $HOME/.vim/repos/github.com"))
-	call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/.vim/repos/github.com/Shougo/dein.vim"))
+if (!isdirectory(expand("$HOME/.config/nvim/repos/github.com/Shougo/dein.vim")))
+	call system(expand("mkdir -p $HOME/.config/nvim/repos/github.com"))
+	call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/.config/nvim/repos/github.com/Shougo/dein.vim"))
 endif
 
 set nocompatible
 
 " Required:
-set runtimepath+=~/.vim/repos/github.com/Shougo/dein.vim/
+set runtimepath+=~/.config/nvim/repos/github.com/Shougo/dein.vim/
 
-call dein#begin(expand('~/.vim'))
+call dein#begin(expand('~/.config/nvim'))
 let pluginsExist = 0
 
 call dein#add('Shougo/dein.vim')
@@ -70,6 +70,3 @@ set path+=**
 
 " Display all matching files when we tab complete
 set wildmenu
-
-
-let g:ycm_path_to_python_interpreter = '/usr/bin/python2.7'
