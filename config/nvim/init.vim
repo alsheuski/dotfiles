@@ -2,9 +2,18 @@
 "
 "
 "
-
+" NeoVim >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+"
 set number
+set showcmd 
+set expandtab
 let mapleader = ','
+set nocompatible
+"set termguicolors
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+set clipboard+=unnamedplus
+"
+" End NeoVim <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 " Setup dein --------------------------------------------------------
 if (!isdirectory(expand("$HOME/.config/nvim/repos/github.com/Shougo/dein.vim")))
@@ -12,7 +21,6 @@ if (!isdirectory(expand("$HOME/.config/nvim/repos/github.com/Shougo/dein.vim")))
   call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/.config/nvim/repos/github.com/Shougo/dein.vim"))
 endif
 
-set nocompatible
 
 " Required:
 set runtimepath+=~/.config/nvim/repos/github.com/Shougo/dein.vim/
@@ -24,6 +32,9 @@ call dein#add('Shougo/dein.vim')
 call dein#add('haya14busa/dein-command.vim')
 
 call dein#add('othree/html5.vim')
+
+" Fuzzy file, buffer, mru, tag, etc finder.
+call dein#add('ctrlpvim/ctrlp.vim')
 
 " A (Neo)vim plugin for formatting code.
 call dein#add('sbdchd/neoformat')
@@ -185,11 +196,14 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css,scss EmmetInstall
 "
 " End emmet <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-" Finding files
-" Search down into subfolders
-set path+=**
-
-" Display all matching files when we tab complete
-set wildmenu
+"
+" CtrlP >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+"
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPBuffer'
+let g:ctrlp_working_path_mode = 'ra'
+"
+" Ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+"
+" End CtrlP <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
