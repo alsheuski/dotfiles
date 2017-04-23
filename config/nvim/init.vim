@@ -7,7 +7,6 @@
 set number
 set showcmd 
 set expandtab
-let mapleader = ','
 set nocompatible
 "set termguicolors
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
@@ -45,6 +44,9 @@ call dein#add('heavenshell/vim-jsdoc')
 call dein#add('hail2u/vim-css3-syntax', {'on_ft':['css','scss']})
 call dein#add('ap/vim-css-color')
 
+" quoting/parenthesizing made simple
+call dein#add('tpope/vim-surround')
+
 " Vim plugin for auto closing brackets
 call dein#add('itmammoth/doorboy.vim') 
 
@@ -58,6 +60,12 @@ call dein#add('scrooloose/nerdtree')
 
 " A plugin of NERDTree showing git status flags
 call dein#add('Xuyuanp/nerdtree-git-plugin')
+"
+" Extra syntax and highlight for nerdtree files
+call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
+
+" Adds file type glyphs/icons to many popular Vim plugins
+call dein#add('ryanoasis/vim-devicons')
 
 call dein#add('vim-airline/vim-airline')
 call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
@@ -102,6 +110,7 @@ let g:echodoc_enable_at_startup=1
 " Let airline tell me my status
 set noshowmode
 set noswapfile
+let g:airline_powerline_fonts = 1
 filetype on
 set relativenumber number
 set tabstop=2 shiftwidth=2 expandtab
@@ -135,15 +144,16 @@ function! s:nerdtreeinit()
 endf
 
 map <silent> - :NERDTreeToggle<CR>
+nmap <C-i> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
 let NERDTreeHijackNetrw=0
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:NERDTreeWinSize=45
 let g:NERDTreeAutoDeleteBuffer=1
 let g:WebDevIconsOS = 'Darwin'
+let NERDTreeIgnore = ['\.pyc$', '\.retry$']
 let NERDTreeMinimalUI=1
 let NERDTreeCascadeSingleChildDir=0
-map <silent> <C-n> :NERDTreeToggle<CR>
 "
 " End NERDTreeToggle <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -200,10 +210,15 @@ autocmd FileType html,css,scss EmmetInstall
 " CtrlP >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 "
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPBuffer'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 "
 " Ignore files in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 "
 " End CtrlP <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+set encoding=utf8
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+let mapleader = ','

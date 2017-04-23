@@ -91,3 +91,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="$HOME/.local/bin:$PATH"
 #export PATH="/usr/local/bin/python:$PATH"
+#
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
