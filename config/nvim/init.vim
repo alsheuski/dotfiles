@@ -148,6 +148,14 @@ nmap <C-i> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
 let NERDTreeHijackNetrw=0
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+
+let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
+let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
+
 let g:NERDTreeWinSize=45
 let g:NERDTreeAutoDeleteBuffer=1
 let g:WebDevIconsOS = 'Darwin'
@@ -221,4 +229,4 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 set encoding=utf8
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
-let mapleader = ','
+let mapleader = "\<Space>"
