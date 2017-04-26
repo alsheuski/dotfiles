@@ -1,6 +1,7 @@
 alias s="cd ~/Sites"
 alias p="cd ~/Projects"
 
+
 alias p2="python"
 alias p3="python3"
 

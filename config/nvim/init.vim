@@ -2,7 +2,7 @@
 "
 "
 "
-" NeoVim >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+" NeoVim ------------------------------------------------------------{{{
 "
 set number
 set showcmd 
@@ -12,7 +12,7 @@ set nocompatible
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 set clipboard+=unnamedplus
 "
-" End NeoVim <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" }}}
 
 " Setup dein --------------------------------------------------------
 if (!isdirectory(expand("$HOME/.config/nvim/repos/github.com/Shougo/dein.vim")))
@@ -23,6 +23,7 @@ endif
 
 " Required:
 set runtimepath+=~/.config/nvim/repos/github.com/Shougo/dein.vim/
+set rtp+=/usr/local/opt/fzf
 
 call dein#begin(expand('~/.config/nvim'))
 let pluginsExist = 0
@@ -37,6 +38,9 @@ call dein#add('ctrlpvim/ctrlp.vim')
 
 " A (Neo)vim plugin for formatting code.
 call dein#add('sbdchd/neoformat')
+
+" Fzf search for vim
+call dein#add('junegunn/fzf.vim', { 'do': './install --all' })
 
 call dein#add('elzr/vim-json', {'on_ft': 'json'})
 call dein#add('othree/jsdoc-syntax.vim')
@@ -218,7 +222,7 @@ autocmd FileType html,css,scss EmmetInstall
 " CtrlP >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 "
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_working_path_mode = 'ra'
 "
 " Ignore files in .gitignore
