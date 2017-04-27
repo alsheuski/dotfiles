@@ -2,6 +2,7 @@
 "
 "
 "
+
 " NeoVim ------------------------------------------------------------{{{
 "
 set number
@@ -11,6 +12,11 @@ set nocompatible
 "set termguicolors
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 set clipboard+=unnamedplus
+syntax enable
+syntax on
+
+source $HOME/.config/nvim/themes/Tomorrow-Night.vim
+"
 "
 " }}}
 
@@ -177,9 +183,7 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 " Themes and colors >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 "
-syntax enable
-syntax on
-"
+
 " End Themes and colors <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 "
 " Code formating >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
