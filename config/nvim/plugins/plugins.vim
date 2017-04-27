@@ -19,6 +19,7 @@ call dein#add('othree/html5.vim')
 
 " Fuzzy file, buffer, mru, tag, etc finder.
 call dein#add('ctrlpvim/ctrlp.vim')
+" call dein#add('wincent/command-t')
 
 " A (Neo)vim plugin for formatting code.
 call dein#add('sbdchd/neoformat')
