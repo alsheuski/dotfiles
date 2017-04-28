@@ -27,6 +27,17 @@ call dein#add('sbdchd/neoformat')
 " Fzf search for vim
 call dein#add('junegunn/fzf.vim', { 'do': './install --all' })
 
+call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
+call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
+
+" Syntax for JavaScript libraries
+call dein#add('othree/javascript-libraries-syntax.vim')
+
+" Vastly improved Javascript indentation and syntax support in Vim.
+call dein#add('pangloss/vim-javascript')
+
+" Vim plugin, provides insert mode auto-completion for quotes, parens, brackets, etc.
+call dein#add('Raimondi/delimitMate', {'on_ft': ['javascript', 'typescript', 'css', 'scss']})
 call dein#add('elzr/vim-json', {'on_ft': 'json'})
 call dein#add('othree/jsdoc-syntax.vim')
 call dein#add('heavenshell/vim-jsdoc')
