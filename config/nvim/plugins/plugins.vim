@@ -44,6 +44,9 @@ call dein#add('heavenshell/vim-jsdoc')
 call dein#add('hail2u/vim-css3-syntax', {'on_ft':['css','scss']})
 call dein#add('ap/vim-css-color')
 
+" The most advanced TypeScript Syntax Highlighting
+call dein#add('HerringtonDarkholme/yats.vim')
+
 " quoting/parenthesizing made simple
 call dein#add('tpope/vim-surround')
 
