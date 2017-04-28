@@ -77,9 +77,8 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('Shougo/deol.nvim')
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neomru.vim')
-call dein#add('Shougo/context_filetype.vim')
+"call dein#add('Shougo/context_filetype.vim')
 
-call dein#add('Shougo/context_filetype.vim')
 call dein#add('carlitux/deoplete-ternjs', {'on_ft': 'javascript'})
 call dein#add('zchee/deoplete-jedi', {'on_ft': 'python'})
 
