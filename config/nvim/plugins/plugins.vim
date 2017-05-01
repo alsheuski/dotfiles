@@ -79,7 +79,7 @@ call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neomru.vim')
 "call dein#add('Shougo/context_filetype.vim')
 
-call dein#add('carlitux/deoplete-ternjs', {'on_ft': 'javascript'})
+call dein#add('carlitux/deoplete-ternjs', { 'build': { 'mac': 'npm install -g tern', 'unix': 'npm install -g tern' }})
 call dein#add('zchee/deoplete-jedi', {'on_ft': 'python'})
 
 call dein#add('zchee/deoplete-zsh')

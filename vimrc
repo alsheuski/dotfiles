@@ -28,7 +28,7 @@ call dein#add('tpope/vim-markdown', {'on_ft': 'markdown'})
 call dein#add('scrooloose/nerdtree')
 call dein#add('vim-airline/vim-airline')
 call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
-call dein#add('Valloric/YouCompleteMe', {'build': './install.py'})
+"call dein#add('Valloric/YouCompleteMe', {'build': './install.py'})
 
 call dein#add('mhartington/oceanic-next')
 
