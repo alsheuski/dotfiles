@@ -35,6 +35,12 @@ source $HOME/.config/nvim/plugins/nerdtree.vim
 source $HOME/.config/nvim/plugins/indentline.vim
 source $HOME/.config/nvim/plugins/deoplete.vim
 source $HOME/.config/nvim/plugins/neoformat.vim
+source $HOME/.config/nvim/plugins/ultisnips.vim
+
+" Use Tab for everything (except UltiSnips)!
+autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:UltiSnipsExpandTrigger="<C-j>"
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>

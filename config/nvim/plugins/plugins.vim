@@ -28,6 +28,8 @@ call dein#add('sbdchd/neoformat')
 call dein#add('junegunn/fzf.vim', { 'do': './install --all' })
 
 call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
+call dein#add('othree/es.next.syntax.vim')
+call dein#add('othree/jspc.vim')
 call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
 
 " Syntax for JavaScript libraries
@@ -43,6 +45,11 @@ call dein#add('othree/jsdoc-syntax.vim')
 call dein#add('heavenshell/vim-jsdoc')
 call dein#add('hail2u/vim-css3-syntax', {'on_ft':['css','scss']})
 call dein#add('ap/vim-css-color')
+
+" The ultimate snippet solution for Vim
+call dein#add('SirVer/ultisnips')
+
+call dein#add('honza/vim-snippets')
 
 " The most advanced TypeScript Syntax Highlighting
 call dein#add('HerringtonDarkholme/yats.vim')
@@ -74,6 +81,10 @@ call dein#add('vim-airline/vim-airline')
 call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
 
 call dein#add('Shougo/deoplete.nvim')
+
+" Perform all your vim insert mode completions with Tab
+call dein#add('ervandew/supertab')
+
 call dein#add('Shougo/deol.nvim')
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neomru.vim')
