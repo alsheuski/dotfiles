@@ -51,6 +51,9 @@ call dein#add('SirVer/ultisnips')
 
 call dein#add('honza/vim-snippets')
 
+" EditorConfig plugin for Vim
+call dein#add('editorconfig-vim')
+
 " The most advanced TypeScript Syntax Highlighting
 call dein#add('HerringtonDarkholme/yats.vim')
 
