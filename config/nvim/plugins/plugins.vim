@@ -15,6 +15,7 @@ let pluginsExist = 0
 call dein#add('Shougo/dein.vim')
 call dein#add('haya14busa/dein-command.vim')
 
+" HTML5 omnicomplete and syntax
 call dein#add('othree/html5.vim')
 
 " Fuzzy file, buffer, mru, tag, etc finder.
@@ -46,6 +47,9 @@ call dein#add('heavenshell/vim-jsdoc')
 call dein#add('hail2u/vim-css3-syntax', {'on_ft':['css','scss']})
 call dein#add('ap/vim-css-color')
 
+" Typescript syntax files for Vim
+call dein#add('leafgarland/typescript-vim')
+
 " The ultimate snippet solution for Vim
 call dein#add('SirVer/ultisnips')
 
@@ -61,7 +65,7 @@ call dein#add('HerringtonDarkholme/yats.vim')
 call dein#add('tpope/vim-surround')
 
 " Vim plugin for auto closing brackets
-call dein#add('itmammoth/doorboy.vim') 
+call dein#add('itmammoth/doorboy.vim')
 
 " A Vim plugin that always highlights the enclosing html/xml tags
 call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})

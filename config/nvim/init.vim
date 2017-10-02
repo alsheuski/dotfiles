@@ -3,7 +3,7 @@
 
 let mapleader = "\<Space>"
 set number
-set showcmd 
+set showcmd
 set expandtab
 " set autowrite
 au FocusLost * silent! wa
@@ -13,6 +13,8 @@ let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 set clipboard+=unnamedplus
 syntax enable
 syntax on
+
+let g:typescript_indent_disable = 1
 
 " Remember cursor position between vim sessions
 autocmd BufReadPost *

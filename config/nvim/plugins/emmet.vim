@@ -1,6 +1,4 @@
 
-" Emmet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-"
 function! s:expand_html_tab()
   " try to determine if we're within quotes or tags.
   " if so, assume we're in an emmet fill area.
@@ -27,7 +25,4 @@ let g:user_emmet_mode='a'
 let g:user_emmet_complete_tag = 0
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,scss EmmetInstall
-"
-" End emmet <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
 
