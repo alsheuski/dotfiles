@@ -3,10 +3,10 @@
 "
 let g:indentLine_char = '¦'
 " Vim
-let g:indentLine_color_term = 239
+let g:indentLine_color_term = 237
 
 "GVim
-let g:indentLine_color_gui = '#A4E57E'
+let g:indentLine_color_gui = '#5c8246'
 
 " none X terminal
 let g:indentLine_color_tty_light = 7 " (default: 4)
