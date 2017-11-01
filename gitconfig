@@ -3,7 +3,7 @@
 
 [user]
 	name = Alex Alsheuski
-	email = alex.alshevsky@yandex.ru
+	email = alex@alsheuski.com
 
 [core]
 	excludesfile = $HOME/.gitignore_global
@@ -13,7 +13,7 @@
     path = "~/.gitconfig.local"
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

@@ -56,7 +56,7 @@ call dein#add('SirVer/ultisnips')
 call dein#add('honza/vim-snippets')
 
 " EditorConfig plugin for Vim
-call dein#add('editorconfig-vim')
+call dein#add('editorconfig/editorconfig-vim')
 
 " The most advanced TypeScript Syntax Highlighting
 call dein#add('HerringtonDarkholme/yats.vim')
@@ -65,7 +65,7 @@ call dein#add('HerringtonDarkholme/yats.vim')
 call dein#add('tpope/vim-surround')
 
 " Vim plugin for auto closing brackets
-call dein#add('itmammoth/doorboy.vim')
+"call dein#add('itmammoth/doorboy.vim')
 
 " A Vim plugin that always highlights the enclosing html/xml tags
 call dein#add('valloric/MatchTagAlways', {'on_ft': 'html'})
