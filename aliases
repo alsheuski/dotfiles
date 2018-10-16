@@ -6,3 +6,13 @@ alias p3="python3"
 
 alias gs="git status"
 alias gal="git add ."
+
+prettyGitLog() {
+if [ "$1" ]; then
+  git log --pretty=format:"%h %Cblue %ae %Creset %ai %Cgreen %s" --graph -$1
+else
+  git log --pretty=format:"%h %Cblue %ae %Creset %ai %Cgreen %s" --graph -40
+fi
+}
+
+alias gh="prettyGitLog"
