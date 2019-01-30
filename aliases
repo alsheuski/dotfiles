@@ -16,3 +16,5 @@ fi
 }
 
 alias gh="prettyGitLog"
+alias mygb="git branch -a | grep alsh"
+alias mygbcl="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
