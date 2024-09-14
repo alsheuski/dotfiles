@@ -3,3 +3,4 @@
 bower_components
 node_modules
 vim_settings.xml
+config/nvim/.cache

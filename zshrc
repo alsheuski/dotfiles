@@ -51,7 +51,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm osx pip)
+plugins=(git npm macos pip z virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -74,9 +74,6 @@ export LANG=en_US.UTF-8
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Use z
-. ~/z.sh
 
 # Start in project's folder
 cd ~/Projects
