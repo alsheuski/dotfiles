@@ -84,7 +84,7 @@ export LANG=en_US.UTF-8
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Start in project's folder
-cd ~/Projects
+# cd ~/Projects
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
@@ -106,3 +106,5 @@ export PATH="$HOME/flutter/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+. "$HOME/.cargo/env"
