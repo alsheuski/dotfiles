@@ -1,6 +1,10 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.dap.core",
+    "lazyvim.plugins.extras.editor.inc-rename",
+    "lazyvim.plugins.extras.editor.outline",
+    "lazyvim.plugins.extras.editor.refactoring",
     "lazyvim.plugins.extras.lang.ansible",
     "lazyvim.plugins.extras.lang.docker",
     "lazyvim.plugins.extras.lang.git",
@@ -8,14 +12,18 @@
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.sql",
+    "lazyvim.plugins.extras.lang.toml",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.lsp.neoconf",
+    "lazyvim.plugins.extras.test.core",
+    "lazyvim.plugins.extras.ui.dashboard-nvim",
     "lazyvim.plugins.extras.util.dot",
-    "lazyvim.plugins.extras.util.mini-hipatterns"
+    "lazyvim.plugins.extras.util.mini-hipatterns",
+    "lazyvim.plugins.extras.vscode"
   ],
   "news": {
-    "NEWS.md": "6520"
+    "NEWS.md": "7429"
   },
-  "version": 6
+  "version": 7
 }

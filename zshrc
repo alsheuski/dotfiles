@@ -108,3 +108,5 @@ export PATH="$HOME/flutter/bin:$PATH"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 . "$HOME/.cargo/env"
+export PANEL_FIFO="/tmp/panel-fifo"
+export PATH=$PATH:~/.config/bspwm
