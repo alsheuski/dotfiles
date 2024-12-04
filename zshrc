@@ -84,7 +84,11 @@ export LANG=en_US.UTF-8
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Start in project's folder
+<<<<<<< HEAD
 # cd ~/Projects
+=======
+cd $(echo $PWD)
+>>>>>>> 15f16cd (sync)
 
 # aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
@@ -106,7 +110,11 @@ export PATH="$HOME/flutter/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+<<<<<<< HEAD
 
 . "$HOME/.cargo/env"
 export PANEL_FIFO="/tmp/panel-fifo"
 export PATH=$PATH:~/.config/bspwm
+=======
+export PATH=/opt/homebrew/opt/postgresql@15/bin:/Users/alsheuski/flutter/bin:/Users/alsheuski/.nvm/versions/node/v22.8.0/bin:/Users/alsheuski/.local/bin:/Users/alsheuski/.local/share/nvim/mason/bin:/Users/alsheuski/Projects/app-database/backend/.venv/bin:/Users/alsheuski/flutter/bin:/Users/alsheuski/.nvm/versions/node/v22.8.0/bin:/Users/alsheuski/.local/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/alsheuski/flutter/bin:/Users/alsheuski/.nvm/versions/node/v22.8.0/bin:/Users/alsheuski/.local/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin
+>>>>>>> 15f16cd (sync)
